@@ -12,7 +12,7 @@ using namespace std;
 int main()
 {
     int n = 0;
-    int i = 0;       // Diamond row counter
+    int r = 0;       // Diamond row counter
     int s = 0;       // Diamond space counter
     int star = 0;    // Diamond star counter
 
@@ -26,10 +26,10 @@ int main()
     }
 
     // Top half and middle of diamond
-    for (i = 1; i <= n; i++)
+    for (r = 1; r <= n; r++)
     {
         //Spaces
-        for (s = 1; s <= n - i; s++)
+        for (s = 1; s <= n - r; s++)
         {
             cout << " ";
         }
@@ -44,16 +44,16 @@ int main()
     }
 
     // Bottom half of diamond
-    for (i = n - 1; i >= 1; i--)
+    for (r = n - 1; r >= 1; r--)
     {
         //Spaces
-        for (s = 1; s <= n - i; s++)
+        for (s = 1; s <= n - r; s++)
         {
             cout << " ";
         }
 
         //Stars
-        for (star = 1; star <= (2 * i - 1); star++)
+        for (star = 1; star <= (2 * r - 1); star++)
         {
             cout << "*";
         }

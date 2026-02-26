@@ -35,7 +35,7 @@ int main()
         }
 
         //Stars
-        for (star = 1; star <= (2 * i - 1); star++)
+        for (star = 1; star <= (2 * r - 1); star++)
         {
             cout << "*";
         }
